@@ -1,0 +1,11 @@
+[package]
+name = "ladybuggy"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.29"
+portable-pty = "0.8"
+crossbeam-channel = "0.5"
+# Add this for handling complex terminal cursor commands
+vte = "0.11" 
