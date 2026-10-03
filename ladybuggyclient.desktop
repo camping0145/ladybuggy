@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=ladybuggyclient
+Icon=ladybuggy
+Terminal=false
+Categories=System;TerminalEmulator;
+Keywords=shell;prompt;command;commandline;
+
+Name=Ladybuggy Client
+GenericName=Terminal
+Comment=A wayland native terminal emulator (client)

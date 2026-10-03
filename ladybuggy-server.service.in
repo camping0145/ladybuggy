@@ -1,0 +1,15 @@
+[Service]
+ExecStart=@bindir@/ladybuggy --server=3
+UnsetEnvironment=LISTEN_PID LISTEN_FDS LISTEN_FDNAMES
+NonBlocking=true
+
+[Unit]
+Requires=%N.socket
+Description=Ladybuggy terminal server mode
+Documentation=man:ladybuggy(1)
+PartOf=graphical-session.target
+After=graphical-session.target
+ConditionEnvironment=WAYLAND_DISPLAY
+
+[Install]
+WantedBy=graphical-session.target
